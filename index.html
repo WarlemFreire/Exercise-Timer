@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="block">
+        <h1>Defina seu Timer:</h1>
+        <div class="config-input">
+            <div class="series">
+                <h4>Séries:</h4>
+                <input type="number" class="series-input">
+            </div>
+            <div class="execution">
+                <h4>Execução</h4>
+                <input type="time" class="execution-input" step="1" name="hora" >
+            </div>
+            <div class="rest">
+                <h4>Descanso</h4>
+                <input type="time" class="rest-input" step="1" >
+            </div>
+            
+        </div>
+        <div class="message">
+            <button class="go" onclick="go()">Go!</button>
+        </div>
+        <div class="timer ">
+            <h0 id="timer" class="">00:00:00</h0>
+        </div>
+        <div class="series_counter hide"><h2>Série 1 de 3</h2></div>
+    </div>
+</body>
+</html>
